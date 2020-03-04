@@ -30,4 +30,17 @@ public class BussinessAccount extends Account {
 		}
 	}
 
+	@Override
+	public void withdraw(double amount) {
+
+		// SUPER().
+
+		super.withdraw(amount);
+		balance -= 2;
+
+		// Inicia métodos e atributos de classes pais
+		// Nesse caso é o método 'withdraw()' que está sendo reutilizado
+		// com um acréscimo de $2.0 em taxa para BussinessAccount
+	}
+
 }
